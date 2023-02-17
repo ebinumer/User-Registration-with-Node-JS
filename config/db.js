@@ -1,7 +1,10 @@
+require("dotenv").config()
 // const { MongoClient, ServerApiVersion } = require('mongodb');
 var MongoClient = require('mongodb').MongoClient;
+const password = process.env.DB_CONNECTION_PASS
+const userName = process.env.DB_CONNECTION_USERNAME
 
-const url = "mongodb+srv://<username>:<password>@cluster0.rivxouo.mongodb.net/test?retryWrites=true&w=majority";
+const url = "mongodb+srv://"+userName+":"+password+"@cluster0.rivxouo.mongodb.net/test?retryWrites=true&w=majority";
 
 let _db;
 
