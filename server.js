@@ -2,7 +2,6 @@ const express        = require('express');
 const bodyParser     = require('body-parser');
 // const validator = require('validator');
 // const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
 const db             = require('./config/db');
 const app            = express();
 const indexRoute = require('./routes/index');
